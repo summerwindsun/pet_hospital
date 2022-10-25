@@ -1,0 +1,14 @@
+table{
+    border: 1px blue solid;
+    background: aquamarine;
+    margin: auto;
+    width: 45%;
+
+}
+tr td,th{
+    border: 1px pink solid;
+    background: azure;
+}
+body{
+    text-align: center;
+}

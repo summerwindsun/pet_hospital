@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pet Hospital</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div>
+    <div>
+        <form action="database">
+            <input type="submit" value="展示所有宠物">
+        </form>
+    </div>
+    <div>
+    <p>请输入添加的宠物信息</p>
+    <form action="addPet" method="post" >
+    <input name="Name" type="text" placeholder="name">
+    <input name="Id" type="text" placeholder="id">
+    <input name="Age" type="number" placeholder="age">
+    <input name="visitime" type="text" placeholder="visitime">
+    <input name="visitstatus" type="text" placeholder="visitstatus"> <br>
+    <input type="submit" value="Add Pet Information">
+    </form>
+    </div>
+    <div>
+    <p>请输入删除的宠物id</p>
+    <form action="Delete" method="post">
+        <input name="Id" type="text" placeholder="id">
+        <input type="submit" value="Delete Pet">
+    </form>
+    </div>
+    <div>
+        <p>请输入查询的宠物id</p>
+        <form action="seachId" method="post">
+            <input name="Id" type="number" placeholder="0">
+            <input type="submit" value="Search Pet">
+        </form>
+        <p>请输入查询的宠物名字</p>
+        <form action="searname" method="post">
+            <input name="Name" type="text" placeholder="name">
+            <input type="submit" value="Search Pet">
+        </form>
+    </div>
+    <div>
+        <form action="update.html" method="post">
+            <br>
+            <input type="submit" value="update">
+        </form>
+    </div>
+</div>
+</body>
+</html>
